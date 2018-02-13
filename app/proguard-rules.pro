@@ -19,3 +19,13 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+#-keep class com.central.tech.aiclientlib.** {public *;}
+#-keep public class AiClient
+#-keep public class AiClientConfigs
+#-dontusemixedcaseclassnames
+#-dontskipnonpubliclibraryclasses
+#-verbose
+
+-keep class com.central.tech.aiclientlib.AiClient {public *;}
+-keep class com.central.tech.aiclientlib.AiClientConfigs {public *;}
+-keep class com.central.tech.aiclientlib.AWSInterceptor {public *;}
