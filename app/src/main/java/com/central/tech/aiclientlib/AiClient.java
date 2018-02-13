@@ -13,7 +13,6 @@ import java.io.IOException;
 
 public class AiClient {
 
-    @NonNull
     public static Request signRequestV4(@NonNull Request request,
                                         @NonNull AiClientConfigs configs) throws IOException {
 
@@ -38,5 +37,9 @@ public class AiClient {
 
         AWSHttpRequestHelpers.applyAwsHeaders(requestBuilder, awsRequest.getHeaders());
         return requestBuilder.build();
+    }
+
+    public static AWSInterceptor AWSSigningRequestV4Interceptor(@NonNull AiClientConfigs configs) {
+        return new AWSInterceptor(configs);
     }
 }
