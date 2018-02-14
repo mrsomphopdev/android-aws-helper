@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AiClientLib.iml" filepath="$PROJECT_DIR$/AiClientLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AWSHelper.iml" filepath="$PROJECT_DIR$/AWSHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
